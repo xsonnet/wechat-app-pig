@@ -1,0 +1,17 @@
+.search-field {
+  padding: 10px;
+  background: #ff6b1a;
+}
+.search-field input {
+  padding: 5px;
+  background: #fff;
+  border-radius: 3px;
+}
+.search-field image {
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  right: 20px;
+  top: 16px;
+  z-index: 1;
+}

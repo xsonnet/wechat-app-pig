@@ -1,0 +1,17 @@
+<view class="search-field">
+    <input bindinput="bindSearch" confirm-type="search" bindconfirm="search" />
+    <image src="../../images/search.png"></image>
+</view>
+<view class="main-list">
+  <view class="empty" wx:if="{{list.length === 0}}">
+    <image src="../../images/sorry.png"></image>
+    <view class="">没有内容哦</view>
+  </view>
+  <view hover-class="hover" wx:for="{{list}}" wx:key="index" bindtap="show" data-record="{{item}}">
+    <view class="item flex flex-middle {{item.money > 0 ? 'in' : 'out'}}">
+      <view class="icon flex-left"><image src="../../images/{{item.money > 0 ? 'down' : 'up'}}.png"></image></view>
+      <view class="text flex-auto">{{item.text}}</view>
+      <view class="number flex-right">¥ {{item.money > 0 ? item.money : -item.money}}</view>
+    </view>
+  </view>
+</view>

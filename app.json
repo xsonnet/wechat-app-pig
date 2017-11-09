@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/create",
+    "pages/index/list",
+    "pages/index/search",
+    "pages/user/login",
+    "pages/user/register",
+    "pages/user/index",
+    "pages/user/about"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff6b1a",
+    "navigationBarTitleText": "小猪记账",
+    "navigationBarTextStyle":"white"
+  }
+}

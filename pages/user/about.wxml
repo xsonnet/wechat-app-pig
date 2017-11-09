@@ -1,0 +1,10 @@
+<view class="main-list">
+    <view class="item flex flex-middle">
+        <view class="text flex-auto">版本</view>
+        <view class="flex-right">1.0.1</view>
+    </view>
+    <view class="item flex flex-middle">
+        <view class="text flex-auto">反馈QQ</view>
+        <view class="flex-right">176405269</view>
+    </view>
+</view>

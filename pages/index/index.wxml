@@ -1,0 +1,48 @@
+<view class="main-info clear">
+  <view class="left">
+    <view class="total">
+      <view>总资产（元）</view>
+      <view class="number">{{total}}</view>
+    </view>
+    <view class="in-out">
+      <view>共收入（元）</view>
+      <view class="number">{{income}}</view>
+    </view>
+    <view class="in-out">
+      <view>共支出（元）</view>
+      <view class="number">{{outlay}}</view>
+    </view>
+  </view>
+  <view class="right">
+    <image src="../../images/stamp.png" class="stamp"><view>
+      {{total <= 5000 ? '小白':''}}
+      {{total <= 50000 && total > 5000 ? '发家':''}}
+      {{total <= 5000000 && total > 50000 ? '有钱':''}}
+      {{total > 500000 ? '富翁':''}}
+    </view></image>
+  </view>
+</view>
+<view class="main-list">
+  <view class="empty" wx:if="{{list.length === 0}}">
+    <image src="../../images/sorry.png"></image>
+    <view class="">还没有任何记录哦~</view>
+  </view>
+  <view hover-class="hover" wx:for="{{list}}" wx:key="index" bindtap="show" data-record="{{item}}">
+    <view class="item flex flex-middle {{item.money > 0 ? 'in' : 'out'}}">
+      <view class="icon flex-left"><image src="../../images/{{item.money > 0 ? 'down' : 'up'}}.png"></image></view>
+      <view class="text flex-auto">{{item.text}}</view>
+      <view class="number flex-right">¥ {{item.money > 0 ? item.money : -item.money}}</view>
+    </view>
+  </view>
+</view>
+<view class="toolbar flex flex-middle">
+  <view class="flex-left entries">
+    <image src="../../images/search.png" hover-class="opacity" bindtap="enterSearch"></image>
+  </view>
+  <view class="flex-auto create">
+    <button hover-class="opacity" bindtap="create">添加记录</button>
+  </view>
+  <view class="flex-right entries">
+    <image src="../../images/user.png" hover-class="opacity" bindtap="enterUserIndex"></image>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+.center {
+    color: #666;
+    font-size: 0.8em;
+}

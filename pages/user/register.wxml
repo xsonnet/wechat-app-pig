@@ -1,0 +1,7 @@
+<view class="form">
+    <view class="title">创建账号享受全部功能</view>
+    <input placeholder="手机号" bindinput="inputPhone" />
+    <input password placeholder="密码" bindinput="inputPassword" />
+</view>
+<button class="submit" bindtap="submit">立即注册</button>
+<view class="center" bindtap="redirect">已有账号？登录</view>

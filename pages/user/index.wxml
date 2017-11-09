@@ -1,0 +1,20 @@
+<view class="header">
+  <image src="../../images/pig.png"></image>
+  <view>{{phone}}</view>
+</view>
+<view class="main-list">
+  <navigator url="/pages/index/list">
+    <view class="item flex flex-middle">
+      <image src="../../images/bill.png" class="icon flex-left"></image>
+      <view class="text flex-auto">我的账单</view>
+      <image src="../../images/angle-right.png" class="flex-right angle-right"></image>
+    </view>
+  </navigator>
+  <navigator url="about">
+    <view class="item flex flex-middle">
+      <image src="../../images/info.png" class="icon flex-left"></image>
+      <view class="text flex-auto">关于</view>
+      <image src="../../images/angle-right.png" class="flex-right angle-right"></image>
+    </view>
+  </navigator>
+</view>

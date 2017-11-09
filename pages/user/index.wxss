@@ -1,0 +1,14 @@
+.header {
+  background: #ff6b1a;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+.header image {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}

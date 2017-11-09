@@ -1,0 +1,15 @@
+<view class="type clear">
+    <view class="left {{type === 'out' ? 'active' : ''}}" bindtap="setType" data-type="out">支出</view>
+    <view class="left {{type === 'in' ? 'active' : ''}}" bindtap="setType" data-type="in">收入</view>
+</view>
+<view class="create-form">
+    <view class="line flex flex-middle">
+        <view class="label flex-left">金额：</view>
+        <input class="flex-auto" placeholder="请输入" type="digit" bindinput="setMoney" />
+    </view>
+    <view class="line flex flex-middle">
+        <view class="label flex-left">说明：</view>
+        <input class="flex-auto" placeholder="请输入" bindinput="setText" />
+    </view>
+</view>
+<button class="submit" hover-class="opacity" bindtap="submit">添加{{type === 'in' ? '收入' : '支出'}}</button>
